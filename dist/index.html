@@ -113,6 +113,35 @@
     @media(max-width:440px) { .nav { gap:14px; font-size:14px; } .about-copy { grid-template-columns:1fr; gap:18px; } .hero-meta { gap:10px; font-size:12px; } .hero-meta span + span { padding-left:10px; } .image-caption { font-size:12px; } .city-image { height:310px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; } }
     @media print { .site-header { position:static; } .nav, .button, details, .closing { display:none; } body { background:white; } .wrap { width:100%; } .hero { min-height:0; padding-block:25px; } .city-image { height:300px; } .section { padding-block:30px; } .interests { background:white; color:var(--ink); } .interest-card p,.interest-header p { color:var(--muted); } }
+
+/* Portfolio refinements */
+.wrap{width:min(1180px,calc(100% - 80px))}
+.header-inner{min-height:82px}.nav{gap:23px}.nav a{padding-block:12px}.nav .external{border-radius:6px}
+.hero{min-height:0;padding-block:60px;gap:65px;grid-template-columns:1.2fr .8fr}
+h1{font-size:clamp(64px,7.6vw,108px);line-height:1.03;letter-spacing:-4px}
+.hero-intro{max-width:520px;font-size:19px}.hero-intro strong{font-weight:600}
+.button{background:var(--purple);border-radius:6px;font-weight:600}.button:hover{background:var(--ink)}
+.hero-visual{align-self:center;padding-bottom:26px}.city-image{height:430px;border-radius:80px 6px 6px 6px}
+.location-tag{bottom:70px;padding:18px 24px;border-radius:4px;box-shadow:0 10px 30px #2e16471a}
+.section{padding-block:62px}.section-grid{grid-template-columns:250px minmax(0,1fr);gap:50px}
+.section-label h2{font-size:14px;letter-spacing:1px}.statement{font-size:clamp(28px,3vw,39px)}
+.interests{background:var(--pale);color:var(--ink)}.interests .section-number{color:var(--purple)}
+.interest-header{margin-bottom:32px}.interest-header h3{font-size:42px}.interest-header p{color:var(--muted);max-width:330px}
+.interest-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.interest-card{display:flex;flex-direction:column;background:white;border:1px solid var(--line);border-top:3px solid var(--purple);border-radius:5px;padding:27px 24px}
+.card-index{color:var(--purple);margin-bottom:22px}.interest-card h4{font-size:28px}.interest-card>p{color:var(--muted);flex:1}
+.interest-card summary{border-color:var(--line);gap:10px}.interest-card details p{color:var(--purple);font-size:15px}
+.interests summary:focus-visible{outline-color:var(--purple)}
+.experience-heading{font-size:31px;max-width:none}.experience-item{padding-bottom:23px;margin-bottom:23px}.experience-item h3{font-size:26px}
+.featured-education{border-left:3px solid var(--purple);padding-left:24px}
+.resume-details{border:1px solid var(--line);border-radius:6px;background:var(--pale);padding:20px 24px;margin-top:25px}
+.resume-details>summary{cursor:pointer;font-size:15px;font-weight:600;color:var(--purple)}
+.resume-details[open]>summary{margin-bottom:26px}.resume-details .experience-item:last-child{border:0;padding-bottom:0}
+.closing{background:var(--ink);color:white;padding-block:42px}.closing .eyebrow{color:#dac1f2}.closing h2{font-size:32px}.closing .text-link{border-color:#dac1f2}.closing .text-link:hover{color:#dac1f2}
+@media(max-width:1050px){.wrap{width:calc(100% - 48px)}.hero{gap:40px}.section-grid{grid-template-columns:210px minmax(0,1fr);gap:32px}.nav{gap:18px}.nav .external{display:none}.interest-card{padding:24px 18px}.interest-card h4{font-size:25px}.interest-header p{max-width:280px}}
+@media(max-width:760px){html{scroll-padding-top:145px}.wrap{width:calc(100% - 40px)}.header-inner{display:block;min-height:0;padding-block:15px 8px}.brand{display:inline-block;font-size:26px}.nav{margin-top:8px;justify-content:space-between;gap:0;flex-wrap:wrap}.nav a{padding:8px 6px;min-height:40px}.nav a:first-child{padding-left:0}.hero{grid-template-columns:1fr;padding-block:40px;gap:32px}.hero h1{font-size:clamp(60px,13vw,86px);letter-spacing:-2px}.hero h1>span{display:inline}.hero h1>span+span:before{content:' '}.hero-intro{font-size:18px}.hero-visual{padding-bottom:0;margin-left:14px}.city-image{height:300px;border-top-left-radius:60px}.location-tag{left:-14px;bottom:50px;font-size:20px;padding:15px 20px}.section{padding-block:44px}.section-grid{grid-template-columns:1fr;gap:20px}.section-label{margin-bottom:15px}.interest-cards{grid-template-columns:1fr}.interest-card{padding:25px}.interest-card h4{font-size:28px}.interest-header h3{font-size:34px}.interest-header p{max-width:none}.experience-heading{font-size:29px;margin-bottom:10px}.closing-inner{gap:22px}.closing h2{font-size:30px}}
+@media(max-width:440px){.nav a{font-size:13px}.hero h1{font-size:clamp(52px,13vw,68px)}.resume-details{padding:18px}.skill-grid{grid-template-columns:1fr;gap:24px}.hero-meta{gap:10px}}
+@media print{.hero-visual{display:none}.hero{display:block}.hero h1{font-size:44px}.section-grid{display:block}.interests,.resume-details{background:white}.interest-cards{display:block}.interest-card{break-inside:avoid;margin-bottom:12px}.resume-details{display:block;border:0;padding:0}.resume-details>summary{display:none}.experience-item{break-inside:avoid}}
   </style>
 </head>
 <body>
@@ -121,7 +150,7 @@
     <div class="wrap header-inner">
       <a class="brand" href="#main" aria-label="Amelia Shapiro, home">AS<span>.</span></a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#interests">Studies</a><a href="#experience">Experience</a>
+        <a href="#about">About</a><a href="#interests">Studies</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
         <a class="external" href="https://github.com/ameliashap">GitHub <span aria-hidden="true" class="arrow">↗</span></a>
       </nav>
     </div>
@@ -131,13 +160,13 @@
       <div>
         <p class="eyebrow">Political science · Pre-law · Tulane University</p>
         <h1 id="name"><span>Amelia</span><span>Shapiro<span class="period">.</span></span></h1>
-        <p class="hero-intro">Taking <strong>comparative politics and international relations</strong> at Tulane University. Exploring how political systems shape our world, with an interest in pursuing a minor in AI literacy.</p>
+        <p class="hero-intro">Political science student on the <strong>pre-law track at Tulane University</strong>, studying comparative politics and international relations and hoping to minor in AI literacy.</p>
         <a class="button" href="#interests">Explore my studies <span aria-hidden="true">↓</span></a>
         <p class="hero-meta"><span>New York City roots</span><span>Tulane University</span></p>
       </div>
       <figure class="hero-visual" id="city-visual">
         <img class="city-image" src="manhattan-municipal-building.jpg" width="1200" height="1600" alt="Looking up at the columns and stone façade of the Manhattan Municipal Building" fetchpriority="high">
-        <figcaption class="image-caption"><span>Manhattan, New York</span><span>A sense of place / 01</span></figcaption>
+        <figcaption class="image-caption"><span>Manhattan, New York</span><span>New York City roots</span></figcaption>
         <div class="location-tag"><span>New York roots.</span><span>New Orleans perspective.</span></div>
       </figure>
     </section>
@@ -146,7 +175,7 @@
       <div>
         <p class="statement">Comparing political systems.<br>Understanding a <em>connected world.</em></p>
         <div class="about-copy">
-          <p>I'm a freshman at Tulane University studying political science on the pre-law track. My comparative politics and international relations classes are helping me explore government within countries and the relationships between them.</p>
+          <p>I'm a freshman at Tulane interested in how governments work, how countries relate to one another, and how law shapes public life. I'm also interested in AI literacy: understanding the technology critically and using it responsibly.</p>
           <p>Growing up in New York City shaped how I think about community. Learning alongside people with different experiences taught me to listen closely, question assumptions, and consider more than one perspective.</p>
         </div>
         <div class="study-note"><strong>Tulane University</strong><span>Political Science · Pre-Law</span></div>
@@ -155,7 +184,7 @@
     <section id="interests" class="interests" aria-labelledby="interests-heading">
       <div class="wrap section">
         <div class="section-label"><span class="section-number">02</span><h2 id="interests-heading">Coursework &amp; academic interests</h2></div>
-        <div class="interest-header"><h3>Politics across borders.<br>Technology in public life.</h3><p>Two classes shaping my first year at Tulane, and an AI literacy minor I would like to pursue.</p></div>
+        <div class="interest-header"><h3>My studies.<br>My next questions.</h3><p>Two classes shaping my first year at Tulane, and an AI literacy minor I would like to pursue.</p></div>
         <div class="interest-cards">
           <article class="interest-card"><span class="card-index">I / CURRENT COURSEWORK</span><h4>Comparative politics</h4><p>My comparative politics class is a starting point for exploring how governments differ, how institutions shape participation, and why political outcomes vary across countries.</p><details><summary>A question I'm exploring</summary><p>Why do similar political institutions produce different outcomes across countries?</p></details></article>
           <article class="interest-card"><span class="card-index">II / CURRENT COURSEWORK</span><h4>International relations</h4><p>In my international relations class, I'm interested in how states interact through diplomacy, cooperation, and conflict, and how decisions in one country affect others.</p><details><summary>A question I'm exploring</summary><p>What makes countries cooperate when their interests do not fully align?</p></details></article>
@@ -166,31 +195,17 @@
     <section id="education" class="wrap section section-grid" aria-labelledby="education-heading">
       <div><div class="section-label"><span class="section-number">03</span><h2 id="education-heading">Education &amp; honors</h2></div><p class="experience-heading">Building a foundation.</p></div>
       <div>
-        <article class="experience-item"><p class="role">Current undergraduate studies · New Orleans, Louisiana</p><h3>Tulane University</h3><p>Political science major on the pre-law track, with an interest in pursuing a minor in AI literacy. Current coursework includes comparative politics and international relations.</p></article>
-        <article class="experience-item"><p class="role">Graduated June 2026 · New York, New York</p><h3>West End Secondary School</h3>
+        <article class="experience-item featured-education"><p class="role">Current undergraduate studies · New Orleans, Louisiana</p><h3>Tulane University</h3><p>Political science major on the pre-law track, with an interest in pursuing a minor in AI literacy. Current coursework includes comparative politics and international relations.</p></article>
+        <details class="resume-details"><summary>High school education, honors &amp; AP coursework</summary>        <article class="experience-item"><p class="role">Graduated June 2026 · New York, New York</p><h3>West End Secondary School</h3>
           <ul class="resume-list"><li>National Honor Society · Grades 9–12</li><li>AP Scholar · Grade 11</li><li>School Recognition Award · College Board National Recognition Program, 2025</li></ul>
           <details class="coursework"><summary>Advanced Placement coursework</summary><p><strong>Grade 9:</strong> Human Geography<br><strong>Grade 10:</strong> Biology; World History<br><strong>Grade 11:</strong> U.S. Government and Politics; Chemistry; Seminar<br><strong>Grade 12:</strong> Calculus AB; Research; Environmental Science; English Language and Composition; Macroeconomics</p></details>
-        </article>
+        </article></details>
       </div>
     </section>
     <section id="experience" class="wrap section section-grid" aria-labelledby="experience-heading">
-      <div><div class="section-label"><span class="section-number">04</span><h2 id="experience-heading">Experience</h2></div><p class="experience-heading">Leadership through participation.</p></div>
+      <div><div class="section-label"><span class="section-number">04</span><h2 id="experience-heading">Experience</h2></div><p class="experience-heading">Showing up.<br>Taking responsibility.</p></div>
       <div>
-        <div class="resume-group">
-          <h3 class="resume-group-heading">Leadership &amp; community service</h3>
-          <article class="experience-item"><p class="role">Volunteer assistant coach · Grades 9–12</p><h3>Girls on the Run</h3><p>Coached elementary school girls through running practices and an end-of-year 5K, encouraging teamwork, confidence, and empowerment.</p></article>
-          <article class="experience-item"><p class="role">Senior Council Co-President · Grades 11–12</p><h3>Senior Events Club</h3><p>Coordinated senior activities, fundraisers, and social events at West End Secondary School.</p></article>
-          <article class="experience-item"><p class="role">Co-leader · Grades 10–12</p><h3>Chess Club</h3><p>Co-led weekly meetings at West End Secondary School, taught chess strategies, and helped create a curriculum to improve members' strategic play.</p></article>
-          <article class="experience-item"><p class="role">School tour guide · Grades 10–12</p><h3>West End Secondary School</h3><p>Led tours for prospective middle school students and their families.</p></article>
-          <article class="experience-item"><p class="role">Farm responsibilities · Grades 9–12</p><h3>Family farm</h3><p>Grew and maintained crops, assisted with events, and served patrons.</p></article>
-        </div>
-        <div class="resume-group">
-          <h3 class="resume-group-heading">Athletics &amp; involvement</h3>
-          <article class="experience-item"><p class="role">Starting guard · Grades 9–12</p><h3>Basketball</h3><p>Played for LaGuardia High School, led daily practice sessions and warm-ups, and earned the Most Improved Player Award.</p></article>
-          <article class="experience-item"><p class="role">Volunteer &amp; runner · Grades 9–12</p><h3>Tyathlon</h3><p>Supported athletes at the charity triathlon event and participated in its 5K fundraiser.</p></article>
-          <article class="experience-item"><p class="role">Team manager · Grades 9–12</p><h3>Volleyball &amp; flag football</h3><p>Recorded team statistics and game records, organized equipment, and assisted coaches and players with game-day operations.</p></article>
-          <article class="experience-item"><p class="role">Academic involvement</p><h3>Mock trial</h3><p>Explored legal reasoning through mock trial, developing an interest in how evidence and interpretation come together in an argument. That experience helped shape my decision to pursue the pre-law track.</p></article>
-        </div>
+        <div class="resume-group"><h3 class="resume-group-heading">Selected leadership &amp; service</h3><article class="experience-item"><p class="role">Volunteer assistant coach · Grades 9–12</p><h3>Girls on the Run</h3><p>Coached elementary school girls through running practices and an end-of-year 5K, encouraging teamwork, confidence, and empowerment.</p></article><article class="experience-item"><p class="role">Senior Council Co-President · Grades 11–12</p><h3>Senior Events Club</h3><p>Coordinated senior activities, fundraisers, and social events at West End Secondary School.</p></article><article class="experience-item"><p class="role">Co-leader · Grades 10–12</p><h3>Chess Club</h3><p>Co-led weekly meetings at West End Secondary School, taught chess strategies, and helped create a curriculum to improve members' strategic play.</p></article></div><details class="resume-details"><summary>More service, athletics &amp; involvement</summary><article class="experience-item"><p class="role">School tour guide · Grades 10–12</p><h3>West End Secondary School</h3><p>Led tours for prospective middle school students and their families.</p></article><article class="experience-item"><p class="role">Farm responsibilities · Grades 9–12</p><h3>Family farm</h3><p>Grew and maintained crops, assisted with events, and served patrons.</p></article><article class="experience-item"><p class="role">Starting guard · Grades 9–12</p><h3>Basketball</h3><p>Played for LaGuardia High School, led daily practice sessions and warm-ups, and earned the Most Improved Player Award.</p></article><article class="experience-item"><p class="role">Volunteer &amp; runner · Grades 9–12</p><h3>Tyathlon</h3><p>Supported athletes at the charity triathlon event and participated in its 5K fundraiser.</p></article><article class="experience-item"><p class="role">Team manager · Grades 9–12</p><h3>Volleyball &amp; flag football</h3><p>Recorded team statistics and game records, organized equipment, and assisted coaches and players with game-day operations.</p></article><article class="experience-item"><p class="role">Academic involvement</p><h3>Mock trial</h3><p>Explored legal reasoning through mock trial, developing an interest in how evidence and interpretation come together in an argument. That experience helped shape my decision to pursue the pre-law track.</p></article></details>
       </div>
     </section>
     <section id="skills" class="wrap section section-grid" aria-labelledby="skills-heading">
@@ -200,7 +215,7 @@
         <div><h3>Languages</h3><p>English</p><p>Spanish · Reading and writing</p></div>
       </div>
     </section>
-    <section class="closing" aria-labelledby="closing-heading"><div class="wrap closing-inner"><div><p class="eyebrow">An evolving perspective</p><h2>Curiosity is the starting point.</h2></div><a class="text-link" href="https://github.com/ameliashap/Amelia-Shapiro-Professional-Portfolio">Find my portfolio on GitHub <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+    <section class="closing" aria-labelledby="closing-heading"><div class="wrap closing-inner"><div><p class="eyebrow">Political science · Pre-law · AI literacy interest</p><h2>Learning with purpose.</h2></div><a class="text-link" href="https://github.com/ameliashap">Visit my GitHub profile <span class="arrow" aria-hidden="true">↗</span></a></div></section>
   </main>
   <footer class="wrap"><div class="footer-inner"><p>© 2026 Amelia Shapiro</p><p id="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Municipal_Building_Facade_-_New_York_City.jpg">Momos / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a><br>Cropped and displayed in grayscale; adaptation under the same license.</p><a href="#main">Back to top ↑</a></div></footer>
 </body>
