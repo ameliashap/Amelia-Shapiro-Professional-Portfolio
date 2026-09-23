@@ -1,0 +1,4 @@
+.sites-runtime/
+.env
+.env.*
+!.env.example
