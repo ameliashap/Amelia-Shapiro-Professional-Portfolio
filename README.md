@@ -2,7 +2,7 @@
 
 A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.
 
-**Last updated:** 2026-09-22 14:56:36 UTC
+**Last updated:** 2026-09-22 15:17:55 UTC
 
 [View the portfolio](https://amelia-shapiro-portfolio.ameliashap.chatgpt.site)
 
@@ -24,7 +24,8 @@ The site uses a white and purple palette, responsive layouts, keyboard focus ind
 ## Files and local preview
 
 - `dist/index.html` — Page content, styling, and inline favicon.
-- `dist/manhattan-municipal-building.jpg` — Portfolio photograph.
+- `dist/amelia-shapiro-portrait.jpeg` — User-provided portrait, displayed beside the introduction.
+- `dist/manhattan-municipal-building.jpg` — Previously displayed architectural photograph, retained as an unused asset.
 - `.openai/hosting.json` — Sites hosting configuration.
 
 Open `dist/index.html` directly in a browser, or serve the directory locally:
@@ -37,11 +38,19 @@ Then open `http://localhost:8000`.
 
 ## Image credit
 
+The current portrait was supplied by Amelia Shapiro. The attribution below applies only to the retained architectural photograph, which is no longer displayed.
+
 [Municipal Building Facade — New York City](https://commons.wikimedia.org/wiki/File:Municipal_Building_Facade_-_New_York_City.jpg) by Momos, via Wikimedia Commons, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). The image is cropped and displayed in grayscale; the adaptation is offered under the same license.
 
 ## Dated change log
 
 All timestamps below are in UTC. New entries should be added above existing entries.
+
+### 2026-09-22 15:17:55 UTC
+
+- Added the supplied portrait beside the introduction, preserving the original color and proportions.
+- Adjusted portrait sizing for mobile and desktop and added descriptive alternative text.
+- Removed the architectural-photo credit from the page because that image is no longer displayed.
 
 ### 2026-09-22 14:56:36 UTC
 
