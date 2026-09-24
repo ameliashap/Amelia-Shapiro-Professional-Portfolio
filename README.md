@@ -2,7 +2,7 @@
 
 A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.
 
-**Last updated:** 2026-09-22 15:17:55 UTC
+**Last updated:** 2026-09-24 02:35:06 UTC
 
 [View the portfolio](https://amelia-shapiro-portfolio.ameliashap.chatgpt.site)
 
@@ -19,22 +19,30 @@ The portfolio also includes New York City roots, education and honors, leadershi
 
 ## Website
 
-The site uses a white and purple palette, responsive layouts, keyboard focus indicators, and expandable academic questions. It is built with static HTML and CSS, without a build step or third-party JavaScript dependencies.
+The site uses a white and purple palette, responsive layouts, keyboard focus indicators, and expandable academic questions. A bottom contact section accepts a name, email address, and message.
 
-## Files and local preview
+## Contact inbox
 
-- `dist/index.html` — Page content, styling, and inline favicon.
-- `dist/amelia-shapiro-portrait.jpeg` — User-provided portrait, displayed beside the introduction.
-- `dist/manhattan-municipal-building.jpg` — Previously displayed architectural photograph, retained as an unused asset.
-- `.openai/hosting.json` — Sites hosting configuration.
+Submissions are stored in a Sites D1 database and visible only to the authenticated site owner at `/inbox`. No email notifications are sent. The hosted site remains owner-private; visitors need site access before they can use the form. The inbox is protected separately from the site's sharing settings.
 
-Open `dist/index.html` directly in a browser, or serve the directory locally:
+The form validates inputs, preserves text on failure, prevents duplicate retries, and limits repeated submissions. Raw IP addresses are not stored; a hash is used for rate limiting.
+
+## Files and development
+
+- `public/` — Portfolio HTML, contact form JavaScript, and original image assets.
+- `worker/index.js` — Contact API, owner-only inbox, and asset serving.
+- `db/schema.ts` and `drizzle/` — Database schema and generated migrations.
+- `scripts/build.mjs` — Packages the Worker and assets into `dist/`.
+- `.openai/hosting.json` — Sites project and D1 binding configuration.
+- `tests/contact.test.mjs` — Submission, validation, access, and persistence checks using SQLite.
 
 ```sh
-python3 -m http.server 8000 --directory dist
+npm ci
+npm run build
+npm test
 ```
 
-Then open `http://localhost:8000`.
+Deploy the generated `dist/` artifact through Sites. It includes the Worker, hosting configuration, and schema migrations for the `DB` binding. Opening `public/index.html` alone previews the design but cannot save messages; submissions need the Worker and database.
 
 ## Image credit
 
@@ -45,6 +53,12 @@ The current portrait was supplied by Amelia Shapiro. The attribution below appli
 ## Dated change log
 
 All timestamps below are in UTC. New entries should be added above existing entries.
+
+### 2026-09-24 02:35:06 UTC
+
+- Added a white-and-purple contact form at the bottom with Name, Email, and Message fields.
+- Added persistent submissions and a private owner inbox, input validation, and clear success/error states.
+- Added backend tests and updated build and database documentation.
 
 ### 2026-09-22 15:17:55 UTC
 

@@ -1,0 +1,18 @@
+{
+  "name": "amelia-shapiro-portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test": "node --test tests/contact.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.5"
+  },
+  "private": true
+}
