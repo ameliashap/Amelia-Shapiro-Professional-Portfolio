@@ -2,7 +2,7 @@
 
 A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.
 
-**Last updated:** 2026-09-24 02:35:06 UTC
+**Last updated:** 2026-09-24 02:46:28 UTC
 
 [View the portfolio](https://amelia-shapiro-portfolio.ameliashap.chatgpt.site)
 
@@ -19,7 +19,7 @@ The portfolio also includes New York City roots, education and honors, leadershi
 
 ## Website
 
-The site uses a white and purple palette, responsive layouts, keyboard focus indicators, and expandable academic questions. A bottom contact section accepts a name, email address, and message.
+The site uses a dark charcoal and purple palette, responsive layouts, keyboard focus indicators, and expandable academic questions. A bottom contact section accepts a name, email address, and message.
 
 ## Contact inbox
 
@@ -53,6 +53,11 @@ The current portrait was supplied by Amelia Shapiro. The attribution below appli
 ## Dated change log
 
 All timestamps below are in UTC. New entries should be added above existing entries.
+
+### 2026-09-24 02:46:28 UTC
+
+- Applied a dark charcoal and purple theme with light text, dark study cards and contact fields, and matching inbox colors.
+- Preserved the responsive layout and a light print stylesheet.
 
 ### 2026-09-24 02:35:06 UTC
 
