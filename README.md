@@ -2,7 +2,7 @@
 
 A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.
 
-**Last updated:** 2026-09-24 02:46:28 UTC
+**Last updated:** 2026-09-24 20:14:35 UTC
 
 [View the portfolio](https://amelia-shapiro-portfolio.ameliashap.chatgpt.site)
 
@@ -53,6 +53,11 @@ The current portrait was supplied by Amelia Shapiro. The attribution below appli
 ## Dated change log
 
 All timestamps below are in UTC. New entries should be added above existing entries.
+
+### 2026-09-24 20:14:35 UTC
+
+- Clarified college freshman status in the introduction and current education.
+- Labeled the experience section as a high school résumé and explained when those activities took place.
 
 ### 2026-09-24 02:46:28 UTC
 
