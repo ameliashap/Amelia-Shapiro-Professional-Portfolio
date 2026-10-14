@@ -1,7 +1,7 @@
 import { readFile, readdir, mkdir, rm, writeFile, cp } from 'node:fs/promises';
 const assets = {};
 for (const file of await readdir('public')) {
-  assets['/' + file] = { data: (await readFile('public/' + file)).toString('base64'), type: file.endsWith('.html') ? 'text/html; charset=utf-8' : file.endsWith('.js') ? 'text/javascript; charset=utf-8' : 'image/jpeg' };
+  assets['/' + file] = { data: (await readFile('public/' + file)).toString('base64'), type: file.endsWith('.html') ? 'text/html; charset=utf-8' : file.endsWith('.js') ? 'text/javascript; charset=utf-8' : file.endsWith('.png') ? 'image/png' : 'image/jpeg' };
 }
 await rm('dist', { recursive:true, force:true });
 await mkdir('dist/server', { recursive:true });

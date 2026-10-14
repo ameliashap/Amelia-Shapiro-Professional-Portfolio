@@ -2,11 +2,11 @@
 
 A personal portfolio for Amelia Shapiro, a political science student on the pre-law track at Tulane University.
 
-**Last updated:** 2026-09-24 20:14:35 UTC
+**Last updated:** 2026-10-14 00:00:07 UTC
 
 [View the portfolio](https://amelia-shapiro-portfolio.ameliashap.chatgpt.site)
 
-The hosted site currently requires owner access through ChatGPT.
+The hosted portfolio is public; the contact inbox requires owner sign-in.
 
 ## Academic focus
 
@@ -15,15 +15,15 @@ The hosted site currently requires owner access through ChatGPT.
 - **AI literacy:** An interest in pursuing an AI literacy minor, including AI's limitations, responsible use, and implications for public policy. This is an intended area of study, not a declared or completed minor.
 - **Political science and pre-law:** An ongoing interest in government, legal reasoning, and public policy.
 
-The portfolio also includes New York City roots, education and honors, leadership and community service, athletics, software skills, and languages. High school experiences are labeled by grade level and distinguished from current Tulane studies.
+The portfolio also includes New York City roots, education and honors, leadership and community service, athletics, software skills. High school experiences are labeled by grade level and distinguished from current Tulane studies.
 
 ## Website
 
-The site uses a dark charcoal and purple palette, responsive layouts, keyboard focus indicators, and expandable academic questions. A bottom contact section accepts a name, email address, and message.
+The site uses a white and soft lavender palette, responsive layouts, keyboard focus indicators, and expandable academic questions. A bottom contact section accepts a name, email address, and message.
 
 ## Contact inbox
 
-Submissions are stored in a Sites D1 database and visible only to the authenticated site owner at `/inbox`. No email notifications are sent. The hosted site remains owner-private; visitors need site access before they can use the form. The inbox is protected separately from the site's sharing settings.
+Submissions are stored in a Sites D1 database and visible only to the authenticated site owner at `/inbox`. No email notifications are sent. The hosted portfolio and contact form are publicly accessible. The inbox is protected separately from the site's sharing settings.
 
 The form validates inputs, preserves text on failure, prevents duplicate retries, and limits repeated submissions. Raw IP addresses are not stored; a hash is used for rate limiting.
 
@@ -53,6 +53,56 @@ The current portrait was supplied by Amelia Shapiro. The attribution below appli
 ## Dated change log
 
 All timestamps below are in UTC. New entries should be added above existing entries.
+
+### 2026-10-14 00:00:07 UTC
+
+- Extended lavender polka dots to page margins, section accents, and the closing area.
+- Added soft photo frames, rounded coursework labels, and gentle education and footer treatments.
+
+### 2026-10-13 23:57:34 UTC
+
+- Prioritized family farm/winery, Girls on the Run, and basketball as featured experience.
+- Ordered remaining entries: WESS tours, Tyathlon, volleyball/flag football, mock trial, Chess Club, and Senior Events Club.
+
+### 2026-10-13 04:29:46 UTC
+
+- Made large section titles H2 headings, small section labels plain text, and entry titles H3 headings.
+- Updated styling selectors and verified heading order and section label references.
+
+### 2026-10-13 04:25:16 UTC
+
+- Added a clickable Tulane email address to the contact section.
+
+### 2026-10-13 03:48:54 UTC
+
+- Narrowed the centered desktop layout and paragraph widths for easier reading on larger screens.
+
+### 2026-10-13 03:47:33 UTC
+
+- Removed the languages subsection and renamed the section to Skills.
+
+### 2026-10-13 03:43:56 UTC
+
+- Added supplied basketball and family winery photographs to their respective high school experience entries.
+
+### 2026-10-13 03:42:22 UTC
+
+- Added subtle lavender polka dots to studies, contact, and portrait accents.
+- Adjusted the circular portrait crop to center the face and softened section markers.
+
+### 2026-10-13 03:34:55 UTC
+
+- Restored a welcoming white and light lavender theme, rounded cards and buttons, and subtle lavender accents.
+- Cropped the portrait into a circle with a soft lavender border.
+- Matched the inbox to the lighter palette and corrected public-access documentation.
+
+### 2026-09-24 23:24:28 UTC
+
+- Enlarged the reading panda and moved it beneath the contact introduction in the left column.
+
+### 2026-09-24 23:22:31 UTC
+
+- Added a tiny decorative panda reading a purple book in the contact section, positioned without changing the layout.
 
 ### 2026-09-24 20:14:35 UTC
 
